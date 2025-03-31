@@ -16,11 +16,6 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-		
-		buildConfigField "String", "TMDB_BASE_URL", "\"${TMDB_BASE_URL}\""
-        buildConfigField "String", "TMDB_API_KEY", "\"${TMDB_API_KEY}\""
-        buildConfigField "String", "OMDB_BASE_URL", "\"${OMDB_BASE_URL}\""
-        buildConfigField "String", "OMDB_API_KEY", "\"${OMDB_API_KEY}\""
     }
 
     buildTypes {
