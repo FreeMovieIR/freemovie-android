@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FreeMovie"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -19,10 +20,24 @@
             android:theme="@style/Theme.FreeMovie">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- متغیرهای API -->
+        <meta-data
+            android:name="TMDB_BASE_URL"
+            android:value="${TMDB_BASE_URL}" />
+        <meta-data
+            android:name="TMDB_API_KEY"
+            android:value="${TMDB_API_KEY}" />
+        <meta-data
+            android:name="OMDB_BASE_URL"
+            android:value="${OMDB_BASE_URL}" />
+        <meta-data
+            android:name="OMDB_API_KEY"
+            android:value="${OMDB_API_KEY}" />
+
     </application>
 
 </manifest>
